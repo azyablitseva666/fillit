@@ -51,9 +51,8 @@ void	print_map(t_map *m, int size)
     i = 0;
     while (i < size)
     {
-        printf("%s\n", m->map[i]);
-       // write(1, &m->map[i], size);
-        //write (1, "\n", 1);
+        write(1, m->map[i], size);
+        write (1, "\n", 1);
         i++;
     }
 }
